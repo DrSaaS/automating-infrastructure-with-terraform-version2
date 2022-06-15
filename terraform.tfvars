@@ -11,3 +11,13 @@ enable_classiclink = "false"
 enable_classiclink_dns_support = "false"
 
 preferred_number_of_public_subnets = 2
+
+preferred_number_of_private_subnets = 4
+
+tags = {
+  name            = "Acme"
+  Enviroment      = "production"
+  Owner-Email     = "dare@darey.io"
+  Managed-By      = "Terraform"
+  Billing-Account = "1234567890"
+}
