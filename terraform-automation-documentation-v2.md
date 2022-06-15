@@ -55,3 +55,34 @@ var.tags,
 ```
 
 ![Tagging Public Subnets](./images/tagging1.JPG)  
+
+### error when I ran terraform plan
+
+```
+data.aws_availability_zones.available: Reading...
+data.aws_availability_zones.available: Read complete after 0s [id=eu-west-2]
+╷
+│ Error: Invalid index
+│
+│   on main.tf line 49, in resource "aws_subnet" "private":
+│   49:   availability_zone       = data.aws_availability_zones.available.names[count.index]
+│     ├────────────────
+│     │ count.index is 3
+│     │ data.aws_availability_zones.available.names is list of string with 3 elements
+│
+│ The given key does not identify an element in this collection value: the given index is greater than or equal to the length of the collection.
+
+```
+
+# SOLUTION
+---
+substitute
+```
+availability_zone       = data.aws_availability_zones.available.names[count.index]
+````
+With
+
+```
+availability_zone       = element(data.aws_availability_zones.available.names[*], count.index)
+
+```

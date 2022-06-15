@@ -31,14 +31,12 @@ variable "enable_classiclink_dns_support" {
 
 # Declare a variable to store the desired number of public subnets, and set the default value
 variable "preferred_number_of_public_subnets" {
-  default     = 2
   type        = number
   description = "Preferred number of public subnets"
 }
 
 # Declare a variable to store the desired number of private subnets, and set the default value
 variable "preferred_number_of_private_subnets" {
-  default     = 4
   type        = number
   description = "Preferred number of private subnets"
 }
