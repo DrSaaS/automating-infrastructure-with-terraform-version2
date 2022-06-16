@@ -14,10 +14,13 @@ preferred_number_of_public_subnets = 2
 
 preferred_number_of_private_subnets = 4
 
+environment = "Development"
+name = "Acme"
+
 tags = {
-  name            = "Acme"
-  Enviroment      = "production"
-  Owner-Email     = "dare@darey.io"
-  Managed-By      = "Terraform"
+  name = "Acme"
+  Environment = "production"
+  Owner-Email = "dare@darey.io"
+  Managed-By = "Terraform"
   Billing-Account = "1234567890"
 }

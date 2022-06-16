@@ -76,13 +76,45 @@ data.aws_availability_zones.available: Read complete after 0s [id=eu-west-2]
 
 # SOLUTION
 ---
-substitute
+# Substitute
+
 ```
 availability_zone       = data.aws_availability_zones.available.names[count.index]
-````
-With
+```
+# With
 
 ```
 availability_zone       = element(data.aws_availability_zones.available.names[*], count.index)
+```
 
+### Next I tagged the resources with name and environment by declaring in variables.tf and setting in terraform.tfvars
+-
+
+### terraform.tfvars
+---
+```
+environment = "Development"
+name = "Acme"
+
+tags = {
+  Environment = "production"
+  Owner-Email = "dare@darey.io"
+  Managed-By = "Terraform"
+  Billing-Account = "1234567890"
+}
+```
+
+### Vriables.tf
+---
+```
+variable "name" {
+type = string
+
+
+}
+
+variable "environment" {
+type = string
+
+}
 ```
