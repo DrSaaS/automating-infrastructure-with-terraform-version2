@@ -18,7 +18,6 @@ environment = "Development"
 name = "Acme"
 
 tags = {
-  name = "Acme"
   Environment = "production"
   Owner-Email = "dare@darey.io"
   Managed-By = "Terraform"
