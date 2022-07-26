@@ -3,9 +3,9 @@
 
 
 
-I created an S3 bucket in the AWS console called dele-dev-terraform-bucket to store the Terraform state file
+Before we begin writing our code, I will create an S3 bucket in the AWS console called dele-dev-terraform-bucket to store the Terraform state file
 
-I created an IAM user called Bandelero and gave the user AdministrativeAccess permissions. 
+I created an IAM user(In the AWS console root account) called terraform and gave the user AdministrativeAccess permissions. The user was only given programmatic access.
 
 Next I created Access Keys for AWS CLI or programmatic access and also installed Python SDK (boto3)
 
