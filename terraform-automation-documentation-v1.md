@@ -1,7 +1,7 @@
 ### AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM
 ---
 
-Useful Installs to Use Terraform in VSCode
+Useful extensions for Terraform that I installed in VSCode
 --
 Installed VSCode Terraform extensions
 Hashicorp Terraform Syntax Highlighter 
