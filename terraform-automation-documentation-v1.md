@@ -1,6 +1,12 @@
 ### AUTOMATE INFRASTRUCTURE WITH IAC USING TERRAFORM
 ---
 
+Useful Installs to Use Terraform in VSCode
+--
+Installed VSCode Terraform extensions
+Hashicorp Terraform Syntax Highlighter 
+Terraform Configuration by Anton Kulikov
+
 
 
 Before we begin writing our code, I will create an S3 bucket in the AWS console called dele-dev-terraform-bucket to store the Terraform state file
