@@ -7,7 +7,10 @@ Installed VSCode Terraform extensions
 Hashicorp Terraform Syntax Highlighter 
 Terraform Configuration by Anton Kulikov
 
-
+I also ran terraform init to download all the dependencies needed for our providersand resources.
+```
+terraform init
+``` 
 
 Before we begin writing our code, I will create an S3 bucket in the AWS console called dele-dev-terraform-bucket to store the Terraform state file
 
